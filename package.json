@@ -1,0 +1,31 @@
+{
+  "name": "or_ecmascript6_course",
+  "version": "1.0.0",
+  "description": "\"a game (multi user dungeon)",
+  "main": "index.js",
+  "scripts": {
+    "bundle-js":"browserify lib/hello.js > static/hello.js",
+    "build-js":"babel src -d lib --source-maps",
+    "build": "npm run build-js & npm run bundle-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoGtz/OR_ECMAScript6_Course.git"
+  },
+  "keywords": [
+    "es6",
+    "es2015",
+    "demo"
+  ],
+  "author": "Ricardo Gutierrez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicardoGtz/OR_ECMAScript6_Course/issues"
+  },
+  "homepage": "https://github.com/RicardoGtz/OR_ECMAScript6_Course#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "browserify": "^16.5.0"
+  }
+}
