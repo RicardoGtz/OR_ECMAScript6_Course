@@ -4,7 +4,7 @@ export const INPUT_OPTIONS = Symbol("input_options");
 
 export var options={
     _intro:"You can type",
-    [INPUT_OPTIONS]:["left","rigth","up","down","help"],
+    [INPUT_OPTIONS]:["left","rigth","up","down","help","poke"],
     outpoutOptions(){
         this[INPUT_OPTIONS].forEach(f =>
                                 addToOutput(this._intro+" "+f));

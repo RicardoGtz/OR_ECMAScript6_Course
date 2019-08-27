@@ -4,8 +4,8 @@
   "description": "\"a game (multi user dungeon)",
   "main": "index.js",
   "scripts": {
-    "bundle-js":"browserify lib/hello.js > static/hello.js",
-    "build-js":"babel src -d lib --source-maps",
+    "bundle-js": "browserify lib/hello.js > static/hello.js",
+    "build-js": "babel src -d lib --source-maps",
     "build": "npm run build-js & npm run bundle-js"
   },
   "repository": {

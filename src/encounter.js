@@ -1,3 +1,6 @@
+import "babel-core/register";
+import "babel-polyfill";
+
 export class Encounter{
     constructor(introText=""){
         this.introText=introText;
@@ -5,11 +8,21 @@ export class Encounter{
     whenEncounter(){
         return this.introText;
     }
+
+    *poke(){
+        yield "what's up";
+    }
 }
 
 export class Bear extends Encounter{
     constructor(){
         super("grr grow, you encountered a bear!");
+    }
+    *poke(){
+        yield "Grrr....";
+        yield "Bear is agressive";
+        yield "Bear is attacking you! Whatch out ;)"
+
     }
 }
 
